@@ -12,6 +12,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // Componentes
 import Login from '../components/login/Login';
+import NewUser from '../components/new-user/NewUser';
 const Nav = createNativeStackNavigator();
 
 export default function Router() {
@@ -26,6 +27,13 @@ export default function Router() {
                 }}
                 name="Login"
                 component={Login}/>
+                <Nav.Screen
+                options={{
+                    headerShown: false
+                }}
+                name="NewUser"
+                component={NewUser}
+                />
             </Nav.Navigator>
         </NavigationContainer>
     )
